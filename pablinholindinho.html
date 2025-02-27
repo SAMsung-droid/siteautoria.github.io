@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Naruto site</title>
+
+<style>
+
+.secaocomentarios{
+  background-color: black(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+body{
+  background-image: url(https://wallpapers.com/images/hd/naruto-black-1593-x-1143-background-bnhnfmab46jmc3mz.jpg);
+  background-size: cover;
+  font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+  background-color: orange;
+}
+.nominho{
+  color: gray;
+}
+
+.texto{
+  left: 100px;
+}
+
+.soprosasuke{
+  position: absolute;
+    bottom: 270px; /* Lembrar de mexer aqui!!!!! */
+    left: 20px; 
+    width: auto;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2;
+    text-align: left; 
+}
+
+.soprasakura{
+    position: absolute;
+    bottom: -100px; /* Lembrar de mexer aqui!!!!! */
+    left: 20px; 
+    width: auto;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2;
+    text-align: left; 
+  }
+
+.carousel-caption {
+    position: absolute;
+    bottom: 170px; /* Lembrar de mexer aqui!!!!! */
+    left: 20px; 
+    width: auto;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2;
+    text-align: left; 
+}
+
+
+.carousel-inner {
+    width: 100vw; 
+    height: 100vh; 
+    max-height: 100vh; 
+    overflow: hidden; 
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; 
+    border-radius: 50%; 
+    padding: 20px; 
+}
+
+footer{
+
+height:  50px;
+  background-color: black;
+}
+
+.carousel{
+    width: 100%; 
+      height: 100%; 
+      margin: auto; 
+      display: flex;
+      justify-content: center;
+}
+
+.cartoes {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .title {
+            font-size: 2.5em;
+            color: #ff4500;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #ff4500;
+        }
+        .emoji {
+            font-size: 1.5em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+
+        .divider{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+      border-top: 2px solid #ccc;
+      position: relative;
+    }
+
+    .divider span {
+      background-color: #fff;
+      padding: 0 10px;
+      position: absolute;
+      top: -12px;
+    }
+</style>
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/1280px-Naruto_logo.svg.png" alt="Logo naruto" width="100px">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="Historia.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+              <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+            </svg> Histórias detalhadas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Personagens.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-standing" viewBox="0 0 16 16">
+              <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M6 6.75v8.5a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v2.75a.75.75 0 0 0 1.5 0v-2.5a.25.25 0 0 1 .5 0"/>
+            </svg> Perfis de personagens</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Jutsos.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-vinyl" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="M8 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4M4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0"/>
+              <path d="M9 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg> Jutsus incríveis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fanarts.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+              <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
+            </svg> Fanarts</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/sam._.limaa?igsh=MWI0N3o1YjNidG54aQ==" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30px"> @sam._.limaa
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/jose_matheus.12?igsh=MXRzZ2g5ZGNsdDJuYg==" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30px"> @jose_matheus.12
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://th.bing.com/th/id/R.db44cb35f4bf00f6dedffd29cf541dc1?rik=5f7Z9IFNLB80OA&riu=http%3a%2f%2fpa1.narvii.com%2f5771%2f00d6c18c1ae5245e73e37a083a6b8977051010cc_hq.gif&ehk=UEOIW8%2bANpWCN%2fxb6%2fUb%2fyOb%2bNTLSuYM54fX5VfqMqM%3d&risl=&pid=ImgRaw&r=0" alt="Naruto">
+        <div class="carousel-caption text-left">
+          <h1>Naruto</h1>
+          <p>Naruto Uzumaki é um ninja determinado e resiliente, conhecido por seu espírito inquebrantável e seu sonho de se tornar o Hokage da Vila da Folha. 🍥👊
+
+          </p> </div>
+      </div>
+      
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media1.tenor.com/images/2dbc2533281d2f206ad4901a4aa234fa/tenor.gif?itemid=5373440" alt="Sasuke">
+        <div class="carousel-caption text-left">
+          <div class="soprosasuke"> <h1>Sasuke</h1>
+          <p>Sasuke Uchiha é um ninja talentoso e sério, movido pelo desejo de vingança contra aqueles que destruíram seu clã, e luta constantemente com suas emoções e escolhas. 🌌💔</p>
+        
+        </div></div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://th.bing.com/th/id/R.bb29c624d7325be8c2e2590f9707cc37?rik=JMdNd2tAQ2WyVg&riu=http%3a%2f%2f30.media.tumblr.com%2ftumblr_lnybikIvad1qfbgk1o1_500.gif&ehk=04GHR6uKxTZfbVkVWIO%2fC%2fj5U60L7zpir1MMqbOfUbE%3d&risl=&pid=ImgRaw&r=0" alt="Sakura">
+        <div class="carousel-caption text-left">
+         <div class="soprasakura"> <h1>Sakura</h1>
+          <p>Sakura Haruno é uma ninja corajosa e inteligente, conhecida por sua força, habilidade médica e devoção aos amigos, especialmente Naruto e Sasuke. 🌸💪
+
+          </p> </div> </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+  <hr>
+
+  <div class="container mt-5">
+    <h2 class="mb-4">Últimas Notícias</h2>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2023/07/naruto_novos_episodios_3__376lz2.jpg" class="card-img-top" alt="Imagem 1">
+          <div class="card-body">
+            <h5 class="card-title">Novos episódios de Naruto</h5>
+            <p class="card-text">O site oficial de Naruto anunciou que lançará 4 novos episódios da série com qualidade de animação superior.</p>
+            <a href="https://senkai.com.br/naruto-4-novos-episodios-do-anime-podem-chegar-em-2025/?form=MG0AV3" class="btn btn-primary">Leia mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQwT6kOl6f_JAmYIt-dqc6ZjWbu8sDoktqm7fNXtINVViwAP3OxoEdO1sAyCIk0EqvulBmXJUUTYz5dC2_3o4YiktIb_6HR3mgcl.jpg?r=7bd" class="card-img-top" alt="Imagem 2">
+          <div class="card-body">
+            <h5 class="card-title">Novas temporadas na Netflix</h5>
+            <p class="card-text">A Netflix anunciou a estreia de mais temporadas de Naruto Shippuden com episódios dublados em português.</p>
+            <a href="https://istoe.com.br/istoegeral/2025/01/31/novidades-para-fas-de-naruto-novas-temporadas-na-netflix/?form=MG0AV3" class="btn btn-primary">Leia mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="https://animenew.com.br/wp-content/uploads/2016/04/naruto-shippuuden-jpg.webp" class="card-img-top" alt="Imagem Notícia 3">
+          <div class="card-body">
+            <h5 class="card-title">Naruto Shippuden: Novo Arco?</h5>
+            <p class="card-text">Recentemente, foi anunciado que um novo arco de história será adicionado ao anime Naruto Shippuden.</p>
+            <a href="https://senkai.com.br/arcos-naruto-naruto-shippuden-ordem-episodios-capitulos-fillers/?form=MG0AV3" class="btn btn-primary">Leia mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"><span>Comentários</span></div>
+
+  <div class="secaocomentarios">
+    <h2>Comentários dos Fãs</h2>
+    <form>
+        <div class="form-group">
+            <label for="comment">Deixe seu comentário:</label>
+            <textarea class="form-control" id="comment" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    <div class="comment-item">
+        <p><strong>Nome do Usuário:</strong> Comentário...</p>
+    </div>
+</div>
+
+
+  
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Voltar ao topo</a></p>
+        <p class="nominho">&copy; SansTheus S.T., 2025 &middot; <a href="politica.html">Privacidade</a> &middot; <a href="termos.html">Termos</a></p>
+      </footer>
+    </main>
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
